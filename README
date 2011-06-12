@@ -1,0 +1,11 @@
+===========
+unstatsppd.py - v0.1
+===========
+
+Generate a Pie Chart for the distribution by day of the week of beers drunk
+via Untappd.com using Google Chart Tools Python wrapper and the PyUntappd
+wrapper.
+
+Prerequisites:
+ - Python Google Chart: http://pygooglechart.slowchop.com/
+ - Python Untappd API wrapper: https://github.com/xsa/PyUntappd
