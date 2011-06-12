@@ -55,7 +55,6 @@ def main():
         if not passwd:
             sys.exit("Error: no password entered.")
 
-    c = count = 0
 
     u = untappd.Api(MY_UNTAPPD_API_KEY, user, passwd)
 
