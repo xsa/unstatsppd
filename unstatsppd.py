@@ -15,6 +15,7 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+import datetime
 import getpass
 import time
 import untappd
@@ -26,7 +27,8 @@ from pygooglechart import PieChart2D
 MY_UNTAPPD_API_KEY = ""
 UNTAPPD_DFLT_OFFSET = 25
 
-PIECHART_OUTFILE = 'unstatsppd-pie.png'
+now = datetime.datetime.utcnow()
+PIECHART_OUTFILE = "unstatsppd-pie-%s.png" % (now.strftime("%Y%m%d%H%M%S"))
 
 dayofWeek = ('Monday', 'Tuesday', 'Wednesday', 'Thursday',
              'Friday', 'Saturday', 'Sunday')
